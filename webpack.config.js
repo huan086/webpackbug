@@ -33,20 +33,6 @@ module.exports = {
                     options: { modules: true }
                 }]
             })
-        },
-        {
-            test: require.resolve("./script1.js"),
-            use: [{
-                loader: "expose-loader",
-                options: "blue"
-            }]
-        },
-        {
-            test: require.resolve("./script2.js"),
-            use: [{
-                loader: "expose-loader",
-                options: "green"
-            }]
         }]
     }
 };
